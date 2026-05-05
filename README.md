@@ -80,3 +80,26 @@ title = <string> - The title of the button.
 description = <string> - The description of the button.
 callback = <function> - The function fired after pressing.
 ]]
+```
+
+## Creating a Toggle
+```lua
+local button = tab:createToggle({
+  title = "toggle",
+  default = false,
+  description = "description",
+  callback = function(state)
+     print("toggled to:", state)
+  end
+})
+
+
+--[[
+title = <string> - The title of the toggle.
+description = <string> - The description of the toggle.
+callback = <function> - The function fired after pressing.
+state = <boolean> - The value returned of the toggle.
+
+:set(state)
+
+]]
