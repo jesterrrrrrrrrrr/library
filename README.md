@@ -33,13 +33,19 @@ local dialog = window:dialog({
 	title = "Confirm",
 	body = "Are you sure?",
 	buttons = {"no", "yes"},
-	callback = function(choice <string>) -- 
+	callback = function(choice) 
 		print(choice)
 	end
 })
 
 --[[
-:prompt() - Shows the dialog
+title = <string> - The title of the dialog.
+body = <string> - The body text of the dialog.
+buttons = <table> - The buttons of the dialog. 
+callback = <function> - The function fired after choosing a button.
+choice = <string> - The string returned of the button in the callback.
+
+:prompt() - Shows the dialog.
 
 ]]
 
