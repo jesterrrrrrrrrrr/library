@@ -38,8 +38,8 @@ local dialog = window:dialog({
 	end
 })
 
-:prompt() - Shows the dialog
 --[[
+:prompt() - Shows the dialog
 
 ]]
 
