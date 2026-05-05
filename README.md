@@ -48,12 +48,11 @@ choice = <string> - The string returned of the button in the callback.
 :prompt() - Shows the dialog.
 
 ]]
-
 ```
 
 ## Creating a Tab
 ```lua
-local tab = window:CreateTab({
+local tab = window:createTab({
   name = "home",
   icon = nil,
 })
@@ -64,3 +63,20 @@ icon = <string> - The icon of the tab. (must be like "rbxassetid://*********")
 ]]
 ```
 
+
+## Creating a Button
+```lua
+local button = tab:createButton({
+  title = "button",
+  description = "description",
+  callback = function()
+     print("clicked")
+  end
+})
+
+
+--[[
+title = <string> - The title of the button.
+description = <string> - The description of the button.
+callback = <function> - The function fired after pressing.
+]]
